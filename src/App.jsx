@@ -1,8 +1,11 @@
-export default function App () {
- 
+import { Home } from './pages/Home'
+import { Footer } from './components/Footer'
+
+export default function App() {
   return (
-      <div>
-        <h1>Alex</h1>
-     </div>
+    <>
+      <Home />
+      <Footer />
+    </>
   )
 }
