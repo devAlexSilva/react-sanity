@@ -36,7 +36,7 @@ export const Home = () => {
         <p>confira nossas variedades de produtos</p>
       </div>
       <section>
-        { console.log(products)}
+        { console.log(banner)}
         {product.map(item => {
           return (
             <article key={item.name}>
