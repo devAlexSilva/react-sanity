@@ -3,12 +3,16 @@ import { urlFor } from '../../../data/client'
 
 export const HeroBanner = ({ props }) => {
   const data = props[0]
-  return (
+  console.log(data)
+  return (<>
+  {data &&
     <div className="heroBanner-container">
       <div>
+      <div className='product-textWrapper'>
         <p className="product-solo">{data.smallText}</p>
         <h3>{data.midText}</h3>
         <h1>{data.largeText1}</h1>
+        </div>
         <img src={urlFor(data.image)} alt="" className="heroBanner-image" />
       </div>
 
@@ -22,5 +26,6 @@ export const HeroBanner = ({ props }) => {
         </div>
       </div>
     </div>
+    }</>
   )
 }

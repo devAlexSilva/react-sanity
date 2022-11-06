@@ -1,4 +1,4 @@
-import { Home } from './pages/Home'
+import { Home } from './pages/home/Home'
 import { Footer } from './components/Footer'
 
 export default function App() {
