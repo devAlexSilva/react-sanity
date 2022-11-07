@@ -1,0 +1,36 @@
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  gap: 2rem;
+  padding-top: 3rem;
+}
+.product-card {
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  color: #324d67;
+}
+.product-card:hover >
+.product-wrapper > img {
+    animation: rotation .5s linear;
+}
+.product-wrapper {
+    background-color: #ebebeb;
+    border-radius: 1.5rem;
+}
+
+@keyframes rotation {
+    0% {transform: rotate(0deg)}
+    25% {transform: rotate(5deg)}
+    50% {transform: rotate(0deg)}
+    75% {transform: rotate(-5deg)}
+}
+.product-name {
+  font-weight: 600;
+}
+.product-price {
+  font-weight: 800;
+  margin-top: .6rem;
+  color: #000;
+}
