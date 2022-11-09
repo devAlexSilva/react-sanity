@@ -1,6 +1,8 @@
+import './styles.css'
+
 export const Footer = () => {
   return (
-    <footer>
+    <footer className='footer'>
       <h6>footer aqui 👨🏾‍💻</h6>
     </footer>
   )

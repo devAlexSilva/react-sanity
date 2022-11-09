@@ -2,7 +2,6 @@ import './style.css'
 import { urlFor } from "../../../data/client"
 
 export const Product = ({ props }) => {
-  console.log(props)
   return (
     <>
       {props[0] && (
